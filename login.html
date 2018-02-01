@@ -19,33 +19,25 @@
         </div>
         <section class="login">
           <div class="container container--login">
-            <h1 class="title title--login">Sign Up</h1>
+            <h1 class="title title--login">Log In</h1>
             <form class="login__form" method="post" action="">
               <div class="form__field-group form__field-group--data">
                 <label class="login__input">
-                  <input type="text" name="name" placeholder="Name"/>
-                </label>
-                <label class="login__input">
-                  <input type="email" id="mail" name="mail" placeholder="Email"/>
-                </label>
-                <label class="login__input">
-                  <input type="email" id="re-mail" name="re-mail" placeholder="Re-enter email"/>
+                  <input type="text" name="name" placeholder="Username"/>
                 </label>
                 <label class="login__input">
                   <input type="password" id="password" name="password" placeholder="Password"/>
                 </label>
-                <label class="login__input">
-                  <input type="password" id="re-password" name="re-password" placeholder="Re-enter password"/>
-                </label>
               </div>
-              <div class="form__field-group form__field-group--checkbox">
-                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
-                <label class="login__input--checkbox" for="subscribeNews">Receive our weekly newsletter and other occasional updates</label>
+              <div class="form__field-group form__field-group--checkbox form__field-group--login">
+                <input type="checkbox" id="signed" name="signed" value="signed"/>
+                <label class="login__input--checkbox" for="signed">Stay signed in</label>
+                <a class="text__link" href="#">Forgot password?</a>
               </div>
               <div class="form__field-group form__field-group--button">
-                <input class="btn btn--active" type="submit" value="sign up"/>< class="btn" href="#">log in</a>
+                <a class="btn btn--active" href="#">log in</a>
+                <a class="btn" href="index.html">sign up</a>
               </div>
-              <p class="text">By signing up, you agree to our <a class="text__link" href="#">terms of use, privacy, and cookie policy.</a></p>
             </form>
           </div>
         </section>
