@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Sign In</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <a class="logo" href="#">
+        <picture>
+          <source media="(min-width:1201px)" srcset="image/Logo@2x.png">
+          <img class="logo__img" src="image/Logo@1x.png"/>  
+        </picture>
+        
+      </a>
+    </div>
+    <section class="login">
+      <div class="container container--login">
+        <h1 class="title title--login">Sign Up</h1>
+        <form class="login__form" method="post" action="">
+          <div class="form__field-group form__field-group--data">
+            <label class="login__input">
+              <input type="text" name="name" placeholder="Name"/>
+            </label>
+            <label class="login__input">
+              <input type="email" id="mail" name="mail" placeholder="Email"/>
+            </label>
+            <label class="login__input">
+              <input type="email" id="re-mail" name="re-mail" placeholder="Re-enter email"/>
+            </label>
+            <label class="login__input">
+              <input type="password" id="password" name="password" placeholder="Password"/>
+            </label>
+            <label class="login__input">
+              <input type="password" id="re-password" name="re-password" placeholder="Re-enter password"/>
+            </label>
+          </div>
+          <div class="form__field-group form__field-group--checkbox">
+            <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
+            <label class="login__input--checkbox" for="subscribeNews">Receive our weekly newsletter and other occasional updates</label>
+          </div>
+          <div class="form__field-group form__field-group--button">
+            <input class="btn btn--active" type="submit" value="sign up"/><a class="btn" href="#">log in</a>
+          </div>
+          <p class="text">By signing up, you agree to our <a class="text__link" href="#">terms of use, privacy, and cookie policy.</a></p>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src='js/auth.js'></script>
+</body>
+</html>

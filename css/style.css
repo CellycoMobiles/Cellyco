@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ccc;
+}
+
+.wrapper {
+  position: relative;
+  width: 380px;
+  
+  
+}
+@media (min-width: 1201px) {
+  .wrapper {
+    display: flex;
+    width: 1200px;
+    min-height: 660px;
+  }
+}
+
+.container--login {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form__field-group--data {
+  display: flex;
+  flex-direction: column;
+}
+.form__field-group--button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header {
+  min-height: 277px;
+  background-image: url('../image/geran-de-klerk-136351.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+}
+.header .header--login {
+  background-image: url('../image/city-small.png');
+}
+@media (min-width: 1201px) {
+  .header {
+    width: 52%;
+    background-image: url('../image/geran-de-klerk-136351-b.png');
+    border-radius: 7px 0 0 7px;
+  }
+  .header .header--login {
+    background-image: url('../image/pedro-lastra-157071.png');
+  }
+}
+
+
+.logo {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 20px;
+}
+
+@media (min-width: 1201px) {
+  .logo {
+    top: 50px;
+    left: -10px;
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 0 0 7px 7px;
+}
+
+@media (min-width: 1201px) {
+  .login {
+    width: 48%;
+    align-items: center;
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+
+.login__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login__input input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: none;
+  color: #8d8d8d;
+}
+.login__input input:focus {
+  border-color: #28b5f4;
+}
+
+.login__input--checkbox {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+.login__input--checkbox:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+.login__input--checkbox:after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 14px;
+  left: 3px;
+  top: 4px;
+  border-left: 3px solid #28b5f4;
+  border-bottom: 3px solid #28b5f4;
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"] + label::after {
+  content: none;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.btn {
+  display: block;
+  width: 145px;
+  font-size: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: inherit;
+  border: 2px solid #28b5f4;
+  border-radius: 20px;
+  color: #28b5f4;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover, .btn:active {
+  border-color: #0085c1;
+  color: #0085c1;
+}
+.btn--active {
+  background-color: #28b5f4;
+  color: #ffffff;
+}
+
+
+.btn--active:hover, .btn--active:active {
+  border-color: #0085c1;
+  background-color: #0085c1;
+  color: #ffffff;
+}
+
+.text {
+  margin: 0;
+  padding: 0 28px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #8d8d8d;
+}
+
+.text__link {
+  text-decoration: none;
+  color: #28b5f4;
+}
