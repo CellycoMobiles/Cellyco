@@ -20,6 +20,12 @@
         <section class="login">
           <div class="container container--login">
             <h1 class="title title--login">Log In</h1>
+            <p class="text hidden status-inner">
+              <i class="icon icon-warn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561 561"><path fill="#D80027" d="M0 522.75h561L280.5 38.25 0 522.75zm306-76.5h-51v-51h51v51zm0-102h-51v-102h51v102z"/></svg>
+              </i>
+              <span>Incorrect Password</span>
+            </p>
             <form class="login__form" method="post" action="">
               <div class="form__field-group form__field-group--data">
                 <label class="login__input">
@@ -32,7 +38,7 @@
               <div class="form__field-group form__field-group--checkbox form__field-group--login">
                 <input type="checkbox" id="signed" name="signed" value="signed"/>
                 <label class="login__input--checkbox" for="signed">Stay signed in</label>
-                <a class="text__link" href="#">Forgot password?</a>
+                <a class="text__link" href="recovery.html">Forgot password?</a>
               </div>
               <div class="form__field-group form__field-group--button">
                 <a class="btn btn--active" href="#">log in</a>

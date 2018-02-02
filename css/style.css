@@ -61,6 +61,12 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+@media (max-width: 1200px) {
+  .form__field-group--button-recovery {
+    margin-top: 90px;
+  }
+}
+
 
 .header {
   min-height: 277px;
@@ -221,11 +227,18 @@ input[type="checkbox"] {
 
 .text {
   margin: 0;
-  padding: 0 28px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.6;
   color: #8d8d8d;
+}
+.text.text--indent {
+  padding: 0 28px;
+}
+.text.text--dark {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #000000;
 }
 
 .text__link {
@@ -234,4 +247,23 @@ input[type="checkbox"] {
   font-weight: bold;
   line-height: 1.6;
   color: #28b5f4;
+}
+.text.hidden {
+  display: none;
+}
+.status-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.status-inner span {
+  margin-left: 10px;
+  color: red;
+}
+.icon {
+  width: 16px;
+  vertical-align: middle;
+}
+.icon svg {
+  width: 16px;
 }
